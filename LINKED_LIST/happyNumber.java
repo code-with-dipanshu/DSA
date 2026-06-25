@@ -1,8 +1,11 @@
 package LINKED_LIST;
 
+import LINKED_LIST.ll.Node;
+
 public class happyNumber {
-
-
+    
+    //https://leetcode.com/problems/happy-number/description/
+    
     static boolean isHappyNumber(int n){
         
         int slow = n;
@@ -34,8 +37,7 @@ public class happyNumber {
         return ans;
     }
     
-
-    //https://leetcode.com/problems/happy-number/description/
+   
 
     public static void main(String[] args) {
         int n = 91;

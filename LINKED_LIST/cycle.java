@@ -68,6 +68,20 @@ public class cycle {
         return null;
     }
 
+     //Midlle of Lineked List
+
+    static Node middle(Node head){
+        Node slow = head;
+        Node fast = head;
+
+        while(fast != null && fast.next !=null){
+            slow= slow.next;
+            fast = fast.next.next;
+
+        }
+        return slow;
+    }
+
     public static void main(String[] args) {
         Node head = new Node(1);
         head.next = new Node(2);
@@ -81,5 +95,7 @@ public class cycle {
         System.out.println(lengthofCycle(head));
 
         System.out.println(Position(head).val);
+
+        System.out.println(middle(head).val);
     }
 }
